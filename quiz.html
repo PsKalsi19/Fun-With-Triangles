@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Triangles | Mark-12</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <span class="nav-brand"> Developer </span>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="index.html"
+            >Calculate Triangle</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="#"
+            >Quiz</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="hypotenuse.html"
+            >Calculate Hypotenuse</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="area.html">Calculate Area</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://prabhjot-neog-portfolio.netlify.app/"
+            >Portfolio</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19/Fun-With-Triangles"
+            >View Code</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <img class="hero-img" alt="hero-img" src="shapes.svg"/>
+      <h1 class="hero-heading hero-heading-highlight">Triangles Quiz</h1>
+      <h3 class="hero-subheading">
+        <span class="hero-subheading-highlight"> Hey!</span> Test your knowledge
+        on Triangles by playing the quiz!
+      </h3>
+    </header>
+    <form id="triangle-quiz-form">
+      <div class="questions-container container">
+        <div class="questions-set">
+          <p class="question-text">
+            <strong class="question-number">Q.1</strong> What is the third angle
+            for the triangle where angle1 = 45° and angle2 = 45°?
+          </p>
+          <label class="question-label" for="q1option-1">
+            <input id="q1option-1" type="radio" value="45°" name="question-1" />
+            45°
+          </label>
+          <label class="question-label" for="q1option-2">
+            <input
+              id="q1option-2"
+              type="radio"
+              value="60°"
+              name="question-1"
+            />60°
+          </label>
+          <label class="question-label" for="q1option-3">
+            <input
+              id="q1option-3"
+              type="radio"
+              value="90°"
+              name="question-1"
+            />90°
+          </label>
+        </div>
+        <div class="questions-set">
+          <p class="question-text">
+            <strong class="question-number">Q.2</strong> If a triangle has an
+            angle of 90 degrees, what is it called?
+          </p>
+          <label class="question-label" for="q2option-1">
+            <input
+              id="q2option-1"
+              type="radio"
+              value="Obtuse"
+              name="question-2"
+            />
+            Obtuse Angle
+          </label>
+          <label class="question-label" for="q2option-2">
+            <input
+              id="q2option-2"
+              type="radio"
+              value="Right"
+              name="question-2"
+            />Right Angle
+          </label>
+          <label class="question-label" for="q2option-3">
+            <input
+              id="q2option-3"
+              type="radio"
+              value="Acute"
+              name="question-2"
+            />Acute Angle
+          </label>
+        </div>
+        <div class="questions-set">
+          <p class="question-text">
+            <strong class="question-number">Q.3</strong> If length of all sides
+            of triangle is equal, what is it called?
+          </p>
+          <label class="question-label" for="q3option-1">
+            <input
+              id="q3option-1"
+              type="radio"
+              value="Equilateral"
+              name="question-3"
+            />
+            Equilateral Triangle
+          </label>
+          <label class="question-label" for="q3option-2">
+            <input
+              id="q3option-2"
+              type="radio"
+              value="Isosceles"
+              name="question-3"
+            />Isosceles Triangle</label
+          >
+          <label class="question-label" for="q3option-3">
+            <input
+              id="q3option-3"
+              type="radio"
+              value="Scalene"
+              name="question-3"
+            />Scalene Triangle</label
+          >
+        </div>
+        <div class="questions-set">
+          <p class="question-text">
+            <strong class="question-number">Q.4</strong> What is a hypotenuse?
+          </p>
+          <label class="question-label" for="q4option-1">
+            <input
+              id="q4option-1"
+              type="radio"
+              value="Triangle with 3 right angles"
+              name="question-4"
+            />
+            Triangle with 3 right angles
+          </label>
+          <label class="question-label" for="q4option-2">
+            <input
+              id="q4option-2"
+              type="radio"
+              value="Smallest side of triangle"
+              name="question-4"
+            />Smallest side of triangle
+          </label>
+          <label class="question-label" for="q4option-3">
+            <input
+              id="q4option-3"
+              type="radio"
+              value="Longest side of triangle"
+              name="question-4"
+            />Longest side of triangle
+          </label>
+        </div>
+      </div>
+    </form>
+    <div id="error" class="section-error"></div>
+
+    <div class="button-wrapper">
+      <section class="section">
+        <button id="submit-button" class="btn btn-primary">Submit</button>
+      </section>
+    </div>
+      <p class="output-note">Your result will be shown below 👇</p>
+      <div class="output-container">
+        <h2 id="output"></h2>
+      </div>
+    <footer class="footer">
+      <p class="footer-header">We can connect on:</p>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19">Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/prabhjot-kalsi-8390a6240/"
+            >Linkedin</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/kalamaurcode">Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="quiz.js"></script>
+  </body>
+</html>

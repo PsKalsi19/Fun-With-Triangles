@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Area | Mark-12</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <span class="nav-brand"> Developer </span>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="index.html">Calculate Triangle</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="quiz.html">Quiz</a>
+        </li>
+
+        <li class="list-item-inline">
+          <a class="link" href="hypotenuse.html">Calculate Hypotenuse</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="#">Calculate Area</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://prabhjot-neog-portfolio.netlify.app/"
+            >Portfolio</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19/Fun-With-Triangles"
+            >View Code</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <img class="hero-img" alt="hero-img" src="shapes.svg"/>
+      <h1 class="hero-heading hero-heading-highlight">Calculate Area</h1>
+      <h3 class="hero-subheading">
+        Calculate the Area of various shapes and provide the result to user.
+      </h3>
+    </header>
+    <div class="container container-center">
+      <!-- To select for which shape we need to calculate the area. -->
+      <div class="shape-wrapper">
+        <div class="label-div">
+          <label class="label" for="shapes"> Shapes</label>
+        </div>
+        <select class="shapes" name="shapes" id="shapes">
+          <option selected disabled hidden>Select</option>
+          <option value="triangle">Triangle</option>
+          <option value="rectangle">Rectangle</option>
+          <option value="square">Square</option>
+        </select>
+      </div>
+
+      <!-- Shape cotainers -->
+      <!-- For square -->
+      <div id="square">
+        <div class="image-wrapper">
+          <img class="shape-image" src="square.png" alt="square" />
+          <h2 class="shapes-heading"> Square</h2>
+        </div>
+        <div class="number-wrapper">
+          <div class="label-div">
+            <label class="label" for="square-side"> side:</label>
+          </div>
+          <input
+            id="square-side"
+            class="input-field square-input"
+            min="0"
+            type="number"
+          />
+        </div>
+      </div>
+
+      <!-- For triangle -->
+      <div id="triangle">
+        <div class="image-wrapper">
+          <img class="shape-image" src="triangle.svg" alt="triangle" />
+          <h2 class="shapes-heading"> Triangle</h2>
+        </div>
+        <div class="number-wrapper">
+          <div class="label-div">
+            <label class="label" for="base"> Base(in cm):</label>
+          </div>
+          <input
+            id="base"
+            class="input-field triangle-inputs"
+            min="0"
+            type="number"
+          />
+        </div>
+        <div class="number-wrapper">
+          <div class="label-div">
+            <label class="label" for="height"> Height(in cm):</label>
+          </div>
+          <input
+          id="height"
+          class="input-field triangle-inputs"
+          min="0"
+          type="number"
+          />
+        </div>
+      </div>
+      
+      <!-- For rectangle -->
+      
+      <div id="rectangle">
+        <div class="image-wrapper">
+          <img class="shape-image" src="rectangle.png" alt="rectangle" />
+          <h2 class="shapes-heading"> Rectangle</h2>
+        </div>
+        <div class="number-wrapper">
+          <div class="label-div">
+            <label class="label" for="length"> Length:</label>
+          </div>
+          <input
+            id="length"
+            class="input-field rectangle-inputs"
+            min="0"
+            type="number"
+          />
+        </div>
+        <div class="number-wrapper">
+          <div class="label-div">
+            <label class="label" for="width"> Width:</label>
+          </div>
+          <input
+            id="width"
+            class="input-field rectangle-inputs"
+            min="0"
+            type="number"
+          />
+        </div>
+      </div>
+
+      <div id="error" class="section-error"></div>
+
+      <div class="submit-button-wrapper">
+        <section class="section">
+          <button id="submit-button" class="btn btn-primary">Submit</button>
+        </section>
+      </div>
+      <section class="section">
+        <p class="output-note">Your result will be shown below 👇</p>
+        <div class="output-container">
+          <h2 id="result"></h2>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p class="footer-header">We can connect on:</p>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19">Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/prabhjot-kalsi-8390a6240/"
+            >Linkedin</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/kalamaurcode">Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="area.js"></script>
+  </body>
+</html>

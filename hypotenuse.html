@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Hypotenuse | Mark-12</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <span class="nav-brand"> Developer </span>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="index.html"
+            >Calculate Triangle</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="quiz.html"
+            >Quiz</a
+          >
+        </li>
+      
+        <li class="list-item-inline">
+          <a class="link link-active" href="#"
+            >Calculate Hypotenuse</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="area.html">Calculate Area</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://prabhjot-neog-portfolio.netlify.app/"
+            >Portfolio</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19/Fun-With-Triangles"
+            >View Code</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <img class="hero-img" alt="hero-img" src="shapes.svg"/>
+      <h1 class="hero-heading hero-heading-highlight">Calculate Hypotenuse</h1>
+      <h3 class="hero-subheading">
+        Calculate the Hypotenuse using <span class="hero-subheading-highlight">sqrt(a² + b²)</span> formula
+        and provide the result to user.
+      </h3>
+    </header>
+    <div class="container container-center">
+      <div class="number-wrapper">
+        <div class="label-div">
+          <label class="label" for="side-1"> side A: &#9720;</label>
+        </div>
+        <input id="side-1" class="input-field side-inputs" min="0" type="number" />
+      </div>
+      <div class="number-wrapper">
+        <div class="label-div">
+          <label class="label" for="side-2"> side B:&#9721;</label>
+        </div>
+        <input id="side-2" class="input-field side-inputs" min="0" type="number" />
+      </div>
+      <div id="error" class="section-error"></div>
+
+      <div class="button-wrapper">
+        <section class="section">
+          <button id="submit-button" class="btn btn-primary">Submit</button>
+        </section>
+      </div>
+      <section class="section">
+        <p class="output-note">Your result will be shown below 👇</p>
+        <div class="output-container">
+          <h3 id="result"></h3>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p class="footer-header">We can connect on:</p>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19">Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/prabhjot-kalsi-8390a6240/"
+            >Linkedin</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/kalamaurcode">Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="/hypotenuse.js"></script>
+  </body>
+</html>

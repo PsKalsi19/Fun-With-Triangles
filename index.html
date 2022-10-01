@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun With Triangles | Mark-12</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <span class="nav-brand"> Developer </span>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link link-active" href="#"
+            >Calculate Triangle</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="quiz.html"
+            >Quiz</a
+          >
+        </li>
+      
+        <li class="list-item-inline">
+          <a class="link" href="hypotenuse.html"
+            >Calculate Hypotenuse</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="area.html">Calculate Area</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://prabhjot-neog-portfolio.netlify.app/"
+            >Portfolio</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19/Fun-With-Triangles"
+            >View Code</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <img class="hero-img" alt="hero-img" src="shapes.svg"/>
+      <h1 class="hero-heading hero-heading-highlight">Calculate Triangles</h1>
+      <h3 class="hero-subheading">
+        Check if the angles provided by the user result in triangle or not.
+      </h3>
+    </header>
+    <div class="container container-center">
+      <div class="number-wrapper">
+        <div class="label-div">
+          <label class="label" for="angle-1"> Angle 1: &#9720;</label>
+        </div>
+        <input id="angle-1" class="input-field task-1" min="0" type="number" />
+      </div>
+      <div class="number-wrapper">
+        <div class="label-div">
+          <label class="label" for="angle-2"> Angle 2:&#9721;</label>
+        </div>
+        <input id="angle-2" class="input-field task-1" min="0" type="number" />
+      </div>
+      <div class="number-wrapper">
+        <div class="label-div">
+          <label class="label" for="angle-3"> Angle 3: &#9722;</label>
+        </div>
+        <input id="angle-3" class="input-field task-1" min="0" type="number" />
+      </div>
+      <div id="error" class="section-error"></div>
+
+      <div class="button-wrapper">
+        <section class="section">
+          <button id="submit-button" class="btn btn-primary">Submit</button>
+        </section>
+      </div>
+      <section class="section">
+        <p class="output-note">Your result will be shown below 👇</p>
+        <div class="output-container">
+          <p id="result"></p>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p class="footer-header">We can connect on:</p>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/PsKalsi19">Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/prabhjot-kalsi-8390a6240/"
+            >Linkedin</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/kalamaurcode">Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
