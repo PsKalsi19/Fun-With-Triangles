@@ -9,13 +9,14 @@ submit.addEventListener('click', getFormData)
 
 function getFormData() {
     let quizData = new FormData(quizForm);
-    let index = 0
     let count = 0
-    for (let value of quizData.values()) {
-        if (value === solutions[index]) {
+    let index=0
+    for (let value of quizData.entries()) {
+        let questionNumber=(+value[0])-1
+        if (value[1] === solutions[questionNumber]) {
             count = count + 1;
         }
-        index = index + 1
+        index++
     }
     setOutput(`Your total score is ${count}`)
     if (index < solutions.length) {
