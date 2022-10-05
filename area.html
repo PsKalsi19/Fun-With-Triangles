@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculate Area | Mark-12</title>
+    <!-- CDN for line icons -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navigation container">
-      <span class="nav-brand"> I'm Prabhjot </span>
+      <a
+      href="https://prabh-neog-portfolio.netlify.app/"
+      target="_blank"
+      class="nav-brand link"
+    >
+      Prabhjot Kalsi
+    </a>
       <ul class="list-non-bullet nav-pills">
         <li class="list-item-inline">
           <a class="link" href="index.html">Calculate Triangle</a>
@@ -25,19 +33,18 @@
           <a class="link link-active" href="#">Calculate Area</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="https://prabhjot-neog-portfolio.netlify.app/"
-            >Portfolio</a
-          >
-        </li>
-        <li class="list-item-inline">
-          <a class="link" href="https://github.com/PsKalsi19/Fun-With-Triangles"
-            >View Code</a
+          <a
+            target="_blank"
+            title="view code"
+            class="link"
+            href="https://github.com/PsKalsi19/Fun-With-Triangles"
+            ><i class="lni lni-code"></i> View Code</a
           >
         </li>
       </ul>
     </nav>
     <header class="hero">
-      <img class="hero-img" alt="hero-img" src="shapes.svg"/>
+      <img class="hero-img" alt="hero-img" src="shapes.svg" />
       <h1 class="hero-heading hero-heading-highlight">Calculate Area</h1>
       <h3 class="hero-subheading">
         Calculate the Area of various shapes and provide the result to user.
@@ -62,7 +69,7 @@
       <div id="square">
         <div class="image-wrapper">
           <img class="shape-image" src="square.png" alt="square" />
-          <h2 class="shapes-heading"> Square</h2>
+          <h2 class="shapes-heading">Square</h2>
         </div>
         <div class="number-wrapper">
           <div class="label-div">
@@ -81,7 +88,7 @@
       <div id="triangle">
         <div class="image-wrapper">
           <img class="shape-image" src="triangle.svg" alt="triangle" />
-          <h2 class="shapes-heading"> Triangle</h2>
+          <h2 class="shapes-heading">Triangle</h2>
         </div>
         <div class="number-wrapper">
           <div class="label-div">
@@ -99,20 +106,20 @@
             <label class="label" for="height"> Height(in cm):</label>
           </div>
           <input
-          id="height"
-          class="input-field triangle-inputs"
-          min="0"
-          type="number"
+            id="height"
+            class="input-field triangle-inputs"
+            min="0"
+            type="number"
           />
         </div>
       </div>
-      
+
       <!-- For rectangle -->
-      
+
       <div id="rectangle">
         <div class="image-wrapper">
           <img class="shape-image" src="rectangle.png" alt="rectangle" />
-          <h2 class="shapes-heading"> Rectangle</h2>
+          <h2 class="shapes-heading">Rectangle</h2>
         </div>
         <div class="number-wrapper">
           <div class="label-div">
@@ -156,17 +163,33 @@
       <p class="footer-header">We can connect on:</p>
       <ul class="social-links list-non-bullet">
         <li class="list-item-inline">
-          <a class="link" href="https://github.com/PsKalsi19">Github</a>
+          <a
+            class="link"
+            title="github"
+            target="_blank"
+            href="https://github.com/PsKalsi19"
+            ><i class="lni lni-github-original"></i
+          ></a>
         </li>
+        |
         <li class="list-item-inline">
           <a
             class="link"
+            title="linkedIn"
+            target="_blank"
             href="https://www.linkedin.com/in/prabhjot-kalsi-8390a6240/"
-            >Linkedin</a
-          >
+            ><i class="lni lni-linkedin-original"></i
+          ></a>
         </li>
+        |
         <li class="list-item-inline">
-          <a class="link" href="https://twitter.com/kalamaurcode">Twitter</a>
+          <a
+            class="link"
+            title="twitter"
+            target="_blank"
+            href="https://twitter.com/kalamaurcode"
+            ><i class="lni lni-twitter-filled"></i
+          ></a>
         </li>
       </ul>
     </footer>
